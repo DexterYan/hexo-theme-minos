@@ -37,7 +37,9 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
-
+<% if (!index){ %>
+<div class='shareaholic-canvas' data-app='recommendations' data-app-id='19151780'></div>
+<% } %>
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread">
